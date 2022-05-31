@@ -1,0 +1,3 @@
+[submodule "curry-ghc-language-plugin"]
+	path = curry-ghc-language-plugin
+	url = git@github.com:cau-placc/curry-ghc-language-plugin.git
