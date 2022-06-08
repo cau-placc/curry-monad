@@ -1,4 +1,8 @@
 
 benchmarks/BENCHLOG.txt
-
 benchmarks/BENCHRESULTS.csv
+
+.vscode/
+.stack-work/
+
+*.lock

@@ -14,9 +14,17 @@ However, it contains the implementation of the curry-monad that we benchmarked i
 `curry-ghc-language-plugin/src/Plugin/CurryPlugin/Monad.hs`.
 This file contains stuff that is only relevant for the plugin and does not integrate any extensions to the basic curry-monad.
 Since these extensions are orthogonal to the performance of the monad, benchmark results are still accurate.
-We will add our full implementation with comments to this repository soon, as the implementation exists in a different repository already.
-We just did not have the time to properly clean up and comment the file before submission.
-When this is done, we will update our README as well.
+
+The full implementation of our monad can be found in `src/MemoizedCurry.hs`.
+It contains a commented implementation with set functions, unification and other stuff.
+Some parts of the implementation were factored out into different files.
+Tests and Benchmarks can be found in `src/MemoizedCurryTests.hs` and `src/MemoizedCurryBench.hs`, both of which are uncommented.
+The actual Benchmarks were not taken from that file.
+They were from previous investigations into this matter.
+We just kept them here.
+
+To open an interactive GHC session, just use `stack repl` and optionally provide the path to the file that you want to open.
+Editor support with `haskell-language-server` should work.
 
 ## Benchmarks
 

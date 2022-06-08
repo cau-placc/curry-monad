@@ -1,0 +1,14 @@
+cradle:
+  multi:
+    - path: ./Setup.hs
+      config: { cradle: { none: } }
+    - path: ./curry-ghc-language-plugin
+      config: { cradle: { none: } }
+    - path: ./
+      config:
+        cradle:
+          stack:
+            - path: ./src
+              component: "monadic-curry:lib"
+            - path: ./attempts
+              component: "monadic-curry:lib"
